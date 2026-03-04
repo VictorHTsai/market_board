@@ -316,17 +316,17 @@ def get_stock_data(ticker_symbol, charts_dir):
 
         return {
             "ticker": ticker_symbol,
-            "daily": round(daily_change, 2) if daily_change is not None else None,
+            #"daily": round(daily_change, 2) if daily_change is not None else None,
             "intra": round(intraday_change, 2) if intraday_change is not None else None,
             "5d": round(five_day_change, 2) if five_day_change is not None else None,
             "20d": round(twenty_day_change, 2) if twenty_day_change is not None else None,
-            "atr_pct": round(atr_pct, 1) if atr_pct is not None else None,
-            "dist_sma50_atr": round(dist_sma50_atr, 2) if dist_sma50_atr is not None else None,
-            "rs": round(rs_sts, 0) if rs_sts is not None else None,
+            #"atr_pct": round(atr_pct, 1) if atr_pct is not None else None,
+            #"dist_sma50_atr": round(dist_sma50_atr, 2) if dist_sma50_atr is not None else None,
+            #"rs": round(rs_sts, 0) if rs_sts is not None else None,    # Vars
             "rs_chart": rs_chart_path,
-            "long": long_etfs,
-            "short": short_etfs,
-            "abc": abc_rating
+            #"long": long_etfs,
+            #"short": short_etfs,
+            #"abc": abc_rating
         }
     except Exception as e:
         print("Error", ticker_symbol, e)
